@@ -1,5 +1,5 @@
 'use strict';
-module.exports = (data) =>{
+module.exports = (data) => {
   return new Promise((resolve, reject) => {
     require('jsdom').env({
       html: require('fs').readFileSync('./thevidnet.txt'),
