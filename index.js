@@ -9,5 +9,10 @@ require("express")()
   }catch(e){
     res.send(e);
   }
+  function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 })
 .listen(3000, () => console.log("Running on port 3000"));
